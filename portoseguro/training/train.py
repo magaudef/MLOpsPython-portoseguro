@@ -67,11 +67,9 @@ def train_model(data, parameters):
 
 def get_model_metrics(model, data):
     """Construct a dictionary of metrics for the model"""
-    
     predictions = model.predict(data[1].data)
     fpr, tpr, thresholds = metrics.roc_curve(data[1].label, predictions)
     model_metrics = {"auc": (metrics.auc(fpr, tpr))}
-       
     return model_metrics
 
 
