@@ -5,6 +5,7 @@ from portoseguro.training.train import split_data
 from portoseguro.training.train import train_model
 from portoseguro.training.train import get_model_metrics
 
+
 def test_split_data():
     test_data = {
         'id': [0, 1, 2, 3, 4],
@@ -75,4 +76,3 @@ def __get_test_datasets():
     valid_data = lightgbm.Dataset(X_test, y_test)
     data = (train_data, valid_data)
     return data
-
