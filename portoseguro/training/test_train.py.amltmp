@@ -1,4 +1,4 @@
-import lightgbm
+#import lightgbm
 import numpy as np
 import pandas as pd
 from portoseguro.training.train import split_data
@@ -72,7 +72,7 @@ def __get_test_datasets():
     X_test = np.array([7, 8]).reshape(-1, 1)
     y_test = np.array([0, 1])
 
-    train_data = lightgbm.Dataset(X_train, y_train)
-    valid_data = lightgbm.Dataset(X_test, y_test)
+    #train_data = lightgbm.Dataset(X_train, y_train)
+    #valid_data = lightgbm.Dataset(X_test, y_test)
     data = (train_data, valid_data)
     return data
