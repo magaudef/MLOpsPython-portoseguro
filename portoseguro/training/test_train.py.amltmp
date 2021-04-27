@@ -1,9 +1,9 @@
 import lightgbm
 import numpy as np
 import pandas as pd
-from portoseguro.training.train import split_data, train_model, get_model_metrics
-
-
+from portoseguro.training.train import split_data
+from portoseguro.training.train import train_model
+from portoseguro.training.train import get_model_metrics
 
 def test_split_data():
     test_data = {
@@ -75,3 +75,4 @@ def __get_test_datasets():
     valid_data = lightgbm.Dataset(X_test, y_test)
     data = (train_data, valid_data)
     return data
+

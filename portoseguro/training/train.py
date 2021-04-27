@@ -24,13 +24,11 @@ ARISING IN ANY WAY OUT OF THE USE OF THE SOFTWARE CODE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 """
 
-import os
 import numpy as np
 import pandas as pd
 from sklearn import metrics
 from sklearn.model_selection import train_test_split
 import lightgbm
-
 
 def split_data(data_df):
     """Split a dataframe into training and validation datasets"""
@@ -107,6 +105,7 @@ def main():
     
     # Print the resulting metrics for the model
     print(metrics)
-    
+
+
 if __name__ == '__main__':
     main()
