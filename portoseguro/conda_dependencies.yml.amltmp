@@ -24,17 +24,21 @@ dependencies:
   - pip:
       # Base AzureML SDK
       - azureml-sdk
-      - lightgbm
 
       # Must match AzureML SDK version.
       # https://docs.microsoft.com/en-us/azure/machine-learning/concept-environments
       - azureml-defaults
+      - lightgbm
 
       # Training deps
       - scikit-learn
+      - pandas
 
       # Scoring deps
       - inference-schema[numpy-support]
 
       # MLOps with R
       - azure-storage-blob
+channels:
+- anaconda
+- conda-forge
