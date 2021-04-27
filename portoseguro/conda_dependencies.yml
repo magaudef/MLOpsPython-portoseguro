@@ -24,7 +24,7 @@ dependencies:
   - pip:
       # Base AzureML SDK
       - azureml-sdk
-      - lightgbm
+      - lightgbm=3.1.1
 
       # Must match AzureML SDK version.
       # https://docs.microsoft.com/en-us/azure/machine-learning/concept-environments
