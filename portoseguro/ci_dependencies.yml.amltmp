@@ -19,6 +19,7 @@ dependencies:
   - pip:
       # dependencies with versions aligned with conda_dependencies.yml.
       - azureml-sdk
+      - lightgbm
 
       # Additional pip dependencies for the CI environment.
       - pytest==5.4.*
@@ -28,4 +29,3 @@ dependencies:
       - flake8==3.7.*
       - flake8_formatter_junit_xml==0.0.*
       - azure-cli==2.3.*
-      - lightgbm
