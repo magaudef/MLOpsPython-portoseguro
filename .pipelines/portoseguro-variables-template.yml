@@ -101,7 +101,7 @@ variables:
   # Flag to allow rebuilding the AML Environment after it was built for the first time. 
   # This enables dependency updates from the conda dependencies yaml for scoring activities.
   - name: AML_REBUILD_ENVIRONMENT_SCORING
-    value: "true"
+    value: "false"
 
   # Datastore config for scoring
   # The storage account name and key are supplied as variables in a variable group 
