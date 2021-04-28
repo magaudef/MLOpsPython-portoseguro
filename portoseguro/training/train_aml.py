@@ -29,7 +29,6 @@ import os
 import argparse
 import joblib
 import json
-import lightgbm
 from train import split_data, train_model, get_model_metrics
 
 
